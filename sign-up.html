@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Verse</title>
+
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/sign.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="wrap">
+                <div class="nav_container">
+                    <div class="nav_logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="nav_href">
+                        <a href="#" class="link">О платформе</a>
+                        <a href="#about_us" class="link">Преимущества</a>
+                        <a href="#how_work" class="link">Как это работает</a>
+                        <a href="#prices" class="link">Планы и цены</a>
+
+                    </div>
+                    <div class="nav_sing_in">
+                        <a href="#">Войти</a>
+                    </div>
+                    <div class="nav_language">
+                        <a href="#">en</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="nav_mobile">
+        <div class="wrap">
+            <div class="nav_mobile_content">
+                <div class="nav_mobile_logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="nav_mobile_navigation">
+                    <span></span>
+                    <span class="middle_span"></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav_mobile_container">
+            <div class="nav_mobile_container_block">
+                <div class="nav_mobile_href">
+                    <a href="#" class="link">О платформе</a><br>
+                    <a href="#about_us" class="link">Преимущества</a><br>
+                    <a href="#how_work" class="link">Как это работает</a><br>
+                    <a href="#prices" class="link">Планы и цены</a><br>
+                </div>
+                <div class="nav_mobile_sing_in">
+                    <a href="">Войти</a>
+                </div>
+                <div class="nav_mobile_lang">
+                    <a href="">en</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="sign-up-container">
+            <div class="sign-up-container__square"></div>
+            <div class="sign-up-container__form">
+                <div class="sign-up-container__header">
+                    <a class="sign-up-container__header__item" href="sign-in.html">Войти</a>
+                    <a class="sign-up-container__header__item active" href="sign-up.html">Регeстрация</a>
+                </div>
+                <form action="" class="form">
+                    <div class="form-box" id="first-form">
+                        <div class="form-input">
+                            <input type="radio" name="male" class="sign-up__radio__input" id="radio_male" required>
+                            <label class="sign-up__radio" for="radio_male">
+                                Мужчина
+                            </label>
+                            <input type="radio" name="male" class="sign-up__radio__input" id="radio_female" required>
+                            <label class="sign-up__radio" for="radio_female">
+                                Женщина
+                            </label>
+                        </div>
+                        <input type="text" class="sign-up__input sign-up__input_mt" placeholder="Имя" id="name" required>
+                        <input type="text" class="sign-up__input" placeholder="Фамилия" id="surname" required>
+                        <input type="text" class="sign-up__input" placeholder="E-Mail" id="email" required>
+                        <div class="close-info">
+                            <input type="password" class="sign-up__input" placeholder="Пароль" id="password" required 
+                            data-password = 'sign-up-password'>
+                            <img src="img/sign_eye.svg" alt="" class="sign-up__close__info__button" data-password = 'sign-up-password'>
+                        </div>
+                        <div class="close-info">
+                            <input type="password" class="sign-up__input" placeholder="Подтвердите пароль" id="repite-password" required data-password = 'sign-up-retpassword'>
+                            <img src="img/sign_eye.svg" alt="" class="sign-up__close__info__button" data-password = 'sign-up-retpassword'>
+                        </div>
+                        <select name="" id="select" class="sign-up__select">
+                            <option value="" disabled selected>Как Вы о нас узнали?</option>
+                            <option value="">Пункт</option>
+                            <option value="">Пункт</option>
+                            <option value="">Пункт</option>
+                            <option value="">Пункт</option>
+                        </select>
+
+                        <a href="#" class="sign-up__button" id="form1-button" onclick="return false;">Дальше</a>
+
+                    </div>  
+
+                    <div class="form-box" id="second-form">
+                        <div class="form-input">
+                            <div class="form-input__left">
+                                <input type="radio" name="activity" class="sign-up__radio__input" id="radio_manufacturer" required>
+                                <label class="sign-up__radio sign-up__radio" for="radio_manufacturer">
+                                    С/х производитель
+                                </label>
+                                <input type="radio" name="activity" class="sign-up__radio__input" id="radio_study" required>
+                                <label class="sign-up__radio" for="radio_study">
+                                    Учебное заведение
+                                </label>
+                                <input type="radio" name="activity" class="sign-up__radio__input" id="radio_university" required>
+                                <label class="sign-up__radio sign-up__radio" for="radio_university">
+                                    Финансовый институт
+                                </label>
+                            </div>
+                            <div class="form-input__right">
+                                <input type="radio" name="activity" class="sign-up__radio__input" id="radio_consult" required>
+                                <label class="sign-up__radio" for="radio_consult">
+                                    Консультант
+                                </label>
+                                <input type="radio" name="activity" class="sign-up__radio__input" id="radio_company" required>
+                                <label class="sign-up__radio sign-up__radio" for="radio_company">
+                                    Торговая компания
+                                </label>
+                            </div>
+                        </div>
+                        <input type="text" class="sign-up__input sign-up__input_mt" placeholder="Страна" id="country" required>
+                        <input type="text" class="sign-up__input" placeholder="Город" id="city" required>
+
+                        <input type="checkbox" class="sign-up__checkbox__input" id="checkbox_politics" required>
+                        <label class="sign-up__checkbox" for="checkbox_politics">
+                            Подтверждение <a href="">политики конфиденциальности</a>
+                        </label>
+
+                        <a href="" class="sign-up__button" id="form2-button" onclick="return false;">Дальше</a>
+
+                    </div>  
+                    <div class="form-box" id="third-form">
+                        <p class="third-form__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa
+                        </p>
+
+                        <button type="submit" class="sign-up__submit">Перейти на платформу</button>
+
+                    </div>  
+                </form>
+                <div class="sign-up__pointers">
+                    <span class="sign-up__pointers__item active"></span>
+                    <span class="sign-up__pointers__item"></span>
+                    <span class="sign-up__pointers__item"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src = "https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/sign-up.js"></script>
+
+</body>
+</html>
